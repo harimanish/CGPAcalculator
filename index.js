@@ -1,50 +1,29 @@
-// // sub marks(input)
-// var sem1sub1 = 60;
-// var sem1sub2 = 60;
-// var sem1sub3 = 90;
-// var sem1sub4 = 60;
-// var sem1sub5 = 60;
-// var sem1sub6 = 30;
-// var sem1sub7 = 0;
-// var sem1sub8 = 30;
-// var sem1sub9 = 6;
-
 function getScores() {
-  var sem1sub = [
-    getElementsByClassName("1sem1"),
-    getElementsByClassName("1sem2"),
-    getElementsByClassName("1sem3"),
-    getElementsByClassName("1sem4"),
-    getElementsByClassName("1sem5"),
-    getElementsByClassName("1sem6"),
-    getElementsByClassName("1sem7"),
-    getElementsByClassName("1sem8"),
-    getElementsByClassName("1sem9"),
-  ];
+  var sem1sub = [];
+
+  sem1sub.push(
+    document.getElementById("1sub1").value,
+    document.getElementById("1sub2").value,
+    document.getElementById("1sub3").value,
+    document.getElementById("1sub4").value,
+    document.getElementById("1sub5").value,
+    document.getElementById("1sub6").value,
+    document.getElementById("1sub7").value,
+    document.getElementById("1sub8").value,
+    document.getElementById("1sub9").value
+  );
+  console.log(sem1sub);
+  GPA(sem1sub, c1);
 }
-console.log(sem1sub);
+
+// console.log(sem1sub);
 // credits(data)
 
 var c1 = [3, 4, 3, 3, 3, 3, 1, 2, 2];
 
-// sub arr[]
-var sub = [];
-sub.push(sub1, sub2, sub3, sub4, sub5, sub6);
-
-// total of c*sub
-/*var array1 = [1, 2, 3, 4, 5];
-var array2 = [5, 4, 3, 2, 1];
-
-function sumProducts(array1, array2) {
-  if (array1.length)
-    return array1.pop() * array2.pop() + sumProducts(array1, array2);
-
-  return 0;
-}
-*/
-function GPA(sub, c) {
-  getScores();
+function GPA(sem1sub, c) {
   // gradePoint function
+
   function gradePoints(parameter) {
     if (parameter > 89) {
       return 10;
@@ -63,8 +42,8 @@ function GPA(sub, c) {
 
   // range of marks
   var range = [];
-  for (var i = 0; i < sub.length; i++) {
-    range.push(gradePoints(sub[i]));
+  for (var i = 0; i < sem1sub.length; i++) {
+    range.push(gradePoints(sem1sub[i]));
   }
 
   // 0mark 0c
@@ -76,7 +55,7 @@ function GPA(sub, c) {
 
   // jhb
   var sum = 0;
-  for (var i = 0; i < sub.length; i++) {
+  for (var i = 0; i < sem1sub.length; i++) {
     sum += range[i] * c[i];
   }
 
@@ -87,6 +66,5 @@ function GPA(sub, c) {
   var GPA = sum / csum;
 
   console.log(GPA);
+  document.getElementById("GPA1").innerHTML = "sem 1 GPA = " + GPA;
 }
-
-GPA(sem1sub, c1);

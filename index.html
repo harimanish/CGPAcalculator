@@ -61,6 +61,7 @@
     <div class="container">
       <div class="row mt-4 justify-content-around">
         <!-- card1 -->
+
         <div class="col-sm-6 mb-2">
           <div class="card">
             <div class="card-body">
@@ -264,15 +265,24 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 mb-2">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title" id="gp1">GPA for semester 1</h5>
               <!-- form1 -->
               <div class="form-group col-md-6">
-                <button type="button" onclick="GPA()" class="btn btn-primary">
-                  Calculate
-                </button>
+                <div>
+                  <button
+                    type="button"
+                    onclick="getScores();"
+                    class="btn btn-primary"
+                  >
+                    Calculate
+                  </button>
+                </div>
+                <div>
+                  <span id="GPA1"></span>
+                </div>
               </div>
 
               <!-- output to be displayed -->
@@ -280,9 +290,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="" style="background-color: #8e8e8f85">
-      <div class=""></div>
     </div>
   </body>
   <script src="./index.js"></script>
