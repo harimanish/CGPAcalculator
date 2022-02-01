@@ -1,3 +1,4 @@
+var ArrGpa = [];
 function getScores() {
   var sem1sub = [];
 
@@ -12,8 +13,29 @@ function getScores() {
     document.getElementById("1sub8").value,
     document.getElementById("1sub9").value
   );
+  var sem2sub = [];
+  sem2sub.push(
+    document.getElementById("2sub1").value,
+    document.getElementById("2sub2").value,
+    document.getElementById("2sub3").value,
+    document.getElementById("2sub4").value,
+    document.getElementById("2sub5").value,
+    document.getElementById("2sub6").value,
+    document.getElementById("2sub7").value
+  );
 
-  GPA(sem1sub, c1);
+  // var GPA1 = GPA(sem1sub, c1);
+  // var GPA2 = GPA(sem2sub, c2);
+
+  ArrGpa.push(GPA(sem1sub, c1));
+  ArrGpa.push(GPA(sem2sub, c2));
+
+  var sumOfGPA = ArrGpa.reduce(function (x, y) {
+    return x + y;
+  }, 0);
+
+  var CGPA = sumOfGPA / ArrGpa.length;
+  document.getElementById("CGPA").innerHTML = "CGPA = " + CGPA;
 }
 
 // credits(data)
@@ -62,8 +84,8 @@ function GPA(sub, c) {
   for (var i = 0; i < c.length; i++) {
     csum += c[i];
   }
-  console.log(csum);
-  var GPA = parseFloat(sum) / csum;
-
-  document.getElementById("GPA1").innerHTML = "sem 1 GPA = " + GPA;
+  var GPA = sum / csum;
+  console.log(GPA);
+  return GPA;
+  // document.getElementById("GPA1").innerHTML = "sem 1 GPA = " + GPA;
 }
