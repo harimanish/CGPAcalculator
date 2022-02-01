@@ -23,12 +23,46 @@ function getScores() {
     document.getElementById("2sub6").value,
     document.getElementById("2sub7").value
   );
-
-  // var GPA1 = GPA(sem1sub, c1);
-  // var GPA2 = GPA(sem2sub, c2);
+  var sem3sub = [];
+  sem3sub.push(
+    document.getElementById("3sub1").value,
+    document.getElementById("3sub2").value,
+    document.getElementById("3sub3").value,
+    document.getElementById("3sub4").value,
+    document.getElementById("3sub5").value,
+    document.getElementById("3sub6").value,
+    document.getElementById("3sub7").value,
+    document.getElementById("3sub8").value
+  );
+  var sem4sub = [];
+  sem4sub.push(
+    document.getElementById("4sub1").value,
+    document.getElementById("4sub2").value,
+    document.getElementById("4sub3").value,
+    document.getElementById("4sub4").value,
+    document.getElementById("4sub5").value,
+    document.getElementById("4sub6").value,
+    document.getElementById("4sub7").value,
+    document.getElementById("4sub8").value
+  );
+  var sem5sub = [];
+  sem5sub.push(
+    document.getElementById("5sub2").value,
+    document.getElementById("5sub1").value,
+    document.getElementById("5sub3").value,
+    document.getElementById("5sub4").value,
+    document.getElementById("5sub5").value,
+    document.getElementById("5sub6").value,
+    document.getElementById("5sub7").value,
+    document.getElementById("5sub8").value,
+    document.getElementById("5sub9").value
+  );
 
   ArrGpa.push(GPA(sem1sub, c1));
   ArrGpa.push(GPA(sem2sub, c2));
+  ArrGpa.push(GPA(sem3sub, c3));
+  ArrGpa.push(GPA(sem4sub, c4));
+  ArrGpa.push(GPA(sem5sub, c5));
 
   var sumOfGPA = ArrGpa.reduce(function (x, y) {
     return x + y;
@@ -43,6 +77,7 @@ function getScores() {
 var c1 = [3, 4, 3, 3, 3, 3, 1, 2, 2];
 var c2 = [3, 3, 4, 3, 3, 1, 2];
 var c3 = [3, 3, 3, 3, 3, 3, 2, 2];
+var c4 = [3, 3, 3, 3, 3, 2, 2, 2];
 function GPA(sub, c) {
   // gradePoint function
 
