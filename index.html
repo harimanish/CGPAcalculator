@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CGPA calc</title>
-    <link rel="stylesheet" href="/style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -65,7 +65,7 @@
         <div class="col-sm-6 mb-2">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title" id="gp1">Semester 1</h5>
+              <h5 class="card-title" id="gp1">SEMESTER 1</h5>
               <!-- form1 -->
               <div class="form-group col-md-6">
                 <label class="fw-bold mb-2" for="inputphy"
@@ -76,6 +76,7 @@
                   min="0"
                   max="100"
                   class="form-control mb-2"
+                  value="50"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   maxlength="2"
                   id="1sub1"
@@ -88,6 +89,7 @@
                 <input
                   type="number"
                   min="0"
+                  value="50"
                   max="100"
                   class="form-control mb-2"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
@@ -102,6 +104,7 @@
                 <input
                   type="number"
                   min="0"
+                  value="50"
                   max="100"
                   class="form-control mb-2"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
@@ -116,6 +119,7 @@
                 <input
                   type="number"
                   min="0"
+                  value="50"
                   max="100"
                   class="form-control mb-2"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
@@ -131,6 +135,7 @@
                   type="number"
                   min="0"
                   max="100"
+                  value="50"
                   class="form-control mb-2"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   maxlength="2"
@@ -145,6 +150,7 @@
                   type="number"
                   min="0"
                   max="100"
+                  value="50"
                   class="form-control mb-2"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   maxlength="2"
@@ -159,6 +165,7 @@
                   type="number"
                   min="0"
                   max="100"
+                  value="40"
                   class="form-control mb-2"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   maxlength="2"
@@ -173,6 +180,7 @@
                   type="number"
                   min="0"
                   max="100"
+                  value="70"
                   class="form-control mb-2"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   maxlength="2"
@@ -187,6 +195,7 @@
                   type="number"
                   min="0"
                   max="100"
+                  value="60"
                   class="form-control mb-2"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   maxlength="2"
@@ -202,12 +211,12 @@
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title" id="gp1">GPA for semester 1</h5>
+              <h5 class="card-title" id="gp1">SEMESTER 2</h5>
               <!-- form1 -->
               <div class="form-group col-md-6">
                 <label class="fw-bold mb-2" for="inputphy"
-                  >Engineering Physics</label
-                >
+                  >Technical English (3)
+                </label>
                 <input
                   type="number"
                   min="0"
@@ -215,13 +224,13 @@
                   class="form-control mb-2"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   maxlength="2"
-                  id="inputphy"
+                  id="2sub1"
                 />
               </div>
               <div class="form-group col-md-6">
                 <label class="fw-bold mb-2" for="inputphy"
-                  >Engineering Physics</label
-                >
+                  >Engineering Mathematics – II (3)
+                </label>
                 <input
                   type="number"
                   min="0"
@@ -229,13 +238,13 @@
                   class="form-control mb-2"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   maxlength="2"
-                  id="inputphy"
+                  id="2sub2"
                 />
               </div>
               <div class="form-group col-md-6">
                 <label class="fw-bold mb-2" for="inputphy"
-                  >Engineering Physics</label
-                >
+                  >Engineering Chemistry (4)
+                </label>
                 <input
                   type="number"
                   min="0"
@@ -243,13 +252,13 @@
                   class="form-control mb-2"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   maxlength="2"
-                  id="inputphy"
+                  id="2sub3"
                 />
               </div>
               <div class="form-group col-md-6">
                 <label class="fw-bold mb-2" for="inputphy"
-                  >Engineering Physics</label
-                >
+                  >Data structures (3)
+                </label>
                 <input
                   type="number"
                   min="0"
@@ -257,7 +266,174 @@
                   class="form-control mb-2"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   maxlength="2"
-                  id="inputphy"
+                  id="2sub4"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label class="fw-bold mb-2" for="inputphy"
+                  >Digital Logic Circuits (3)
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  class="form-control mb-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="2"
+                  id="2sub5"
+                />
+              </div>
+
+              <div class="form-group col-md-6">
+                <label class="fw-bold mb-2" for="inputphy"
+                  >Engineering Chemistry Lab (1)
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  class="form-control mb-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="2"
+                  id="2sub6"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label class="fw-bold mb-2" for="inputphy"
+                  >Programming in C & Data Structures Lab (2)
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  class="form-control mb-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="2"
+                  id="2sub7"
+                />
+              </div>
+
+              <!-- output to be displayed -->
+            </div>
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" id="gp1">SEMESTER 3</h5>
+              <!-- form1 -->
+              <div class="form-group col-md-6">
+                <label class="fw-bold mb-2" for="inputphy"
+                  >Engineering Mathematics - III (3)
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  class="form-control mb-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="2"
+                  id="3sub1"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label class="fw-bold mb-2" for="inputphy"
+                  >Electrical Circuits and Network Analysis (3)
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  class="form-control mb-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="2"
+                  id="3sub2"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label class="fw-bold mb-2" for="inputphy"
+                  >Signals and Systems (3)
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  class="form-control mb-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="2"
+                  id="3sub3"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label class="fw-bold mb-2" for="inputphy"
+                  >Electronic Circuits - I (3)
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  class="form-control mb-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="2"
+                  id="3sub4"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label class="fw-bold mb-2" for="inputphy"
+                  >Electromagnetic Theory (3)
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  class="form-control mb-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="2"
+                  id="3sub5"
+                />
+              </div>
+
+              <div class="form-group col-md-6">
+                <label class="fw-bold mb-2" for="inputphy"
+                  >Analog Communication (3)
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  class="form-control mb-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="2"
+                  id="3sub6"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label class="fw-bold mb-2" for="inputphy"
+                  >Circuits and Networks Lab (2)
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  class="form-control mb-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="2"
+                  id="3sub7"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label class="fw-bold mb-2" for="inputphy"
+                  >Electronic Circuits - I Lab (2)
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  class="form-control mb-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="2"
+                  id="3sub8"
                 />
               </div>
 

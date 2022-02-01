@@ -12,16 +12,16 @@ function getScores() {
     document.getElementById("1sub8").value,
     document.getElementById("1sub9").value
   );
-  console.log(sem1sub);
+
   GPA(sem1sub, c1);
 }
 
-// console.log(sem1sub);
 // credits(data)
 
 var c1 = [3, 4, 3, 3, 3, 3, 1, 2, 2];
-
-function GPA(sem1sub, c) {
+var c2 = [3, 3, 4, 3, 3, 1, 2];
+var c3 = [3, 3, 3, 3, 3, 3, 2, 2];
+function GPA(sub, c) {
   // gradePoint function
 
   function gradePoints(parameter) {
@@ -35,15 +35,15 @@ function GPA(sem1sub, c) {
       return 7;
     } else if (parameter > 49) {
       return 6;
-    } else if (parameter <= 49 && parameter >= 0) {
+    } else {
       return 0;
     }
   }
 
   // range of marks
   var range = [];
-  for (var i = 0; i < sem1sub.length; i++) {
-    range.push(gradePoints(sem1sub[i]));
+  for (var i = 0; i < sub.length; i++) {
+    range.push(gradePoints(sub[i]));
   }
 
   // 0mark 0c
@@ -55,16 +55,15 @@ function GPA(sem1sub, c) {
 
   // jhb
   var sum = 0;
-  for (var i = 0; i < sem1sub.length; i++) {
+  for (var i = 0; i < sub.length; i++) {
     sum += range[i] * c[i];
   }
+  var csum = 0;
+  for (var i = 0; i < c.length; i++) {
+    csum += c[i];
+  }
+  console.log(csum);
+  var GPA = parseFloat(sum) / csum;
 
-  var csum = c.reduce(function (x, y) {
-    return x + y;
-  }, 0);
-
-  var GPA = sum / csum;
-
-  console.log(GPA);
   document.getElementById("GPA1").innerHTML = "sem 1 GPA = " + GPA;
 }
