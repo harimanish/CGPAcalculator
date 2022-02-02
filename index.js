@@ -47,8 +47,8 @@ function getScores() {
   );
   var sem5sub = [];
   sem5sub.push(
-    document.getElementById("5sub2").value,
     document.getElementById("5sub1").value,
+    document.getElementById("5sub2").value,
     document.getElementById("5sub3").value,
     document.getElementById("5sub4").value,
     document.getElementById("5sub5").value,
@@ -78,6 +78,7 @@ var c1 = [3, 4, 3, 3, 3, 3, 1, 2, 2];
 var c2 = [3, 3, 4, 3, 3, 1, 2];
 var c3 = [3, 3, 3, 3, 3, 3, 2, 2];
 var c4 = [3, 3, 3, 3, 3, 2, 2, 2];
+var c5 = [3, 3, 3, 3, 3, 3, 2, 2, 2];
 function GPA(sub, c) {
   // gradePoint function
 
