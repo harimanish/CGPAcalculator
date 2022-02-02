@@ -121,7 +121,8 @@ function GPA(sub, c) {
     csum += c[i];
   }
   var GPA = sum / csum;
-  console.log(GPA);
+  console.log(parseInt(GPA));
   return GPA;
+  //
   // document.getElementById("GPA1").innerHTML = "sem 1 GPA = " + GPA;
 }
